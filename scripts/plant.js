@@ -18,3 +18,21 @@ function buttonTogol(id) {
     selected.classList.add('bg-black', 'text-white')
     
 }
+
+//  ......allplant heading innertext change 
+
+function totalCount(){
+    const allElement =document.getElementById('allCountInhead');
+  const allPlantbox =document.getElementById('all-plants-container');
+  
+   let totalCountInhead =document.getElementById('allCountInhead');
+   console.log(allPlantbox);
+
+   const totalCount = allPlantbox.children;
+   console.log(totalCount);
+   
+   const childNumber = totalCount.length
+   console.log(childNumber)
+  totalCountInhead.innerText = childNumber;
+}
+totalCount();
