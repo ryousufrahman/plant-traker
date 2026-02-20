@@ -6,22 +6,37 @@
     <title>Plant-traker</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <h1 class="text-2xl font-bold text-green-500">Plant Traker </h1>
+<body class="w-[70%] mx-auto" >
+    <header >
+        <h1 class="text-3xl font-bold text-green-500 mb-5 mt-3 center">Plant Traker </h1>
 
-        <div class="type-count-section">
+        <div class="type-count-section grid grid-cols-3 gap-5 ">
             <div class="all-count-box bg-amber-200 p-5">
-                <p>0</p>
-                <p>All count box</p>
+                <p class="text-2xl font-bold">0</p>
+                <p class="text-2xl font-bold">All plant</p>
             </div>
-            <div>
-                <p>0</p>
-                <p>S</p>
+            <div class="thriving-count-box bg-green-600 p-5">
+                <p class="text-2xl font-bold">0</p>
+                <p class="text-2xl font-bold " >Thriving</p>
+            </div>
+            <div class="struggling-count-box bg-red-500 p-5">
+                <p class="text-2xl font-bold">0</p>
+                <p class="text-2xl font-bold">Struggling</p>
+
             </div>
 
         </div>
+        <hr class="mt-5">
 
     </header>
+    <main class="mt-6" >
+        <div class="all-buttons ">
+            <button class="bg-black text-white py-4 px-6 cursor-pointer">All</button>
+            <button class="bg-gray-400 text-black py-4 px-6 cursor-pointer ml-3 mr-3" >Thriving</button>
+            <button class="bg-gray-400 text-black py-4 px-6 cursor-pointer"  >Strugling</button>
+            
+        </div>
+
+    </main>
 </body>
 </html>
